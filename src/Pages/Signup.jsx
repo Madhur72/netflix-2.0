@@ -16,6 +16,7 @@ const Signup = () => {
   });
   const navigate = useNavigate();
   const handleSignIn = async () => {
+    console.log("signup func trigger")
     const { email, password } = formValues;
     await createUserWithEmailAndPassword(firebaseAuth, email, password);
   };
@@ -53,7 +54,7 @@ const Signup = () => {
                   [e.target.name]: e.target.value,
                 })
               }
-              className=" text-white p-4 bg-transparent border-2 rounded border-gray-500"
+              className=" text-white p-4 bg-transparent border-2 rounded border-gray-500 hover:bg-transparent"
               size="40"
               type="email"
               placeholder="Email Adress"

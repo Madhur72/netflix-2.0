@@ -40,7 +40,7 @@ const Signup = () => {
           <form className=" px-6 py-20  flex flex-col items-center justify-center gap-5 bg-dark" onSubmit={handleLogIn}>
           <p className="text-white font-bold text-4xl">Login</p>
           <input
-          className=" p-3 rounded border-2 border-gray-600 w-96"
+          className=" p-3 rounded border-2 border-gray-600 w-96 bg-transparent"
             type="email"
             value={formValues.email}
             onChange={(e) =>
@@ -51,7 +51,7 @@ const Signup = () => {
             required
           />
           <input
-          className=" p-3  rounded border-2 border-gray-600 w-96"
+          className=" p-3  rounded border-2 border-gray-600 w-96 bg-transparent"
             type="password"
             value={formValues.password}
             onChange={(e) =>
