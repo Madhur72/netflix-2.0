@@ -3,9 +3,19 @@
 @tailwind utilities;
 
 .show-search input{
+   padding: 5px;
    width: 100%;
    opacity: 1;
    border: 1px solid white; 
    visibility: visible;
-   transform: translateX(100);
+   border: none;
+   transition: 0.3s ease-in-out;
+
+}
+.show-search input:focus{
+   outline: none;
+}
+.show-search{
+   border: 1px solid white;
+   border-radius: 10px;
 }

@@ -4,6 +4,7 @@ import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
 import NetFlix from "./Pages/NetFlix";
 import "./Style.css";
+import Player from "./Pages/Player";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
           <Route exact path="/signup" element={<Signup />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/" element={<NetFlix />} />
+          <Route exact path="/player" element={<Player/>}/>
         </Routes>
       </BrowserRouter>
     </div>
